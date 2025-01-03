@@ -16,7 +16,7 @@ X . . . X .
 
 A4 . . . A1 .
 
- Prerequisites : • Python 3.6 or higher • Required libraries (if any) • numpy • matplotlib (if using for graphical output)
+ Prerequisites : • Python 3.6 or higher • Required libraries (if any) • numpy • tkinter (if using for graphical output)
 
 • Installation Clone this repository:
 
