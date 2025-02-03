@@ -1,34 +1,92 @@
-# Project-1_TheWarehouse-Autobots-Dilemma
+The Warehouse-Autobots Dilemma
 
-Project Overview : The Autobots Warehouse Simulation project aims to develop a smart system to control autonomous robots (autobots) within a grid-based warehouse environment. The autobots are tasked with moving products from designated starting points (A) to destination points (B) while avoiding obstacles (X) and each other. The simulation provides a realistic approach to managing multiple bots, ensuring efficient and collision-free movement.  Key Features • Dynamic Grid Layout: The warehouse is represented as a 2D grid with free cells (.), obstacles (X), and designated starting (A) and destination points (B). • Movement Commands: Autobots can execute a set of simple movement commands: Forward, Reverse, Left, Right, and Wait. • Collision Avoidance: The simulation ensures that no two bots occupy the same cell at the same time. • Parallel Movement: Bots can move simultaneously while intelligently avoiding collisions. • Command Logging: Detailed logs of each bot's movement commands are recorded throughout the simulation. • Performance Metrics: The simulation calculates the total time taken and the total number of commands issued.
+🚀 Project Overview
 
-CODE IS :
+The Warehouse-Autobots Simulation project aims to develop a smart system to control autonomous robots (autobots) within a grid-based warehouse environment. The autobots are tasked with moving products from designated starting points (A) to destination points (B) while avoiding obstacles (X) and each other. This simulation provides a realistic approach to managing multiple bots, ensuring efficient and collision-free movement.
 
-. . . . . B4
+🔑 Key Features
 
-B1 . A2 . X .
+Dynamic Grid Layout: A 2D grid representing the warehouse with free cells (.), obstacles (X), starting points (A), and destination points (B).
 
-. . . . . B2
+Movement Commands: Autobots can execute simple commands: Forward, Reverse, Left, Right, and Wait.
 
-. . B3 A3 . .
+Collision Avoidance: Ensures no two bots occupy the same cell simultaneously.
 
-X . . . X .
+Parallel Movement: Bots move simultaneously while intelligently avoiding collisions.
 
-A4 . . . A1 .
+Command Logging: Records detailed logs of each bot's movement commands.
 
- Prerequisites : • Python 3.6 or higher • Required libraries (if any) • numpy • tkinter (if using for graphical output)
+Performance Metrics: Calculates total time taken and number of commands issued for efficiency evaluation.
 
-• Installation Clone this repository:
+🗂️ Project Structure
 
-bash git clone https://github.com/your-username/autobots-simulation.git cd autobots-simulation
+Warehouse-Autobots-Dilemma/
+├── autobot_simulation.py
+├── requirements.txt
+└── README.md
 
-Install required dependencies:
+⚙️ Prerequisites
 
-bash pip install -r requirements.txt Usage To run the simulation, execute the following command in your terminal:
+Python 3.6 or higher
 
-bash python autobot_simulation.py Follow the prompts to input the grid size, starting and ending points, and obstacles.
+Required Libraries:
 
- How to Run the Simulation Upon executing the script, you will be prompted to enter the grid dimensions and configurations for each autobot, including their starting and ending points. The simulation will then execute the commands for each autobot, displaying their movements step-by-step. At the end of the simulation, you will receive a summary of the performance metrics, including total time and command counts. Performance Metrics The simulation will report:
+numpy
 
-Total Time: The cumulative time taken for all autobots to reach their destination, including time spent on Wait commands.  Total Commands: The number of movement commands issued to each bot during the simulation. • Collision Avoidance Logic The autobots operate based on a set of movement rules to prevent collisions. The logic checks: If two bots are about to occupy the same cell, one will wait until the path is clear. Paths are dynamically adjusted based on obstacles and the position of other bots.  Wait Command Management The autobots can issue Wait commands to prevent collisions. This is particularly useful in tight spaces or when two bots are heading toward the same cell. The Wait command is intelligently managed to allow the bots to safely navigate around each other.
- Testing To ensure the functionality of the simulation, run the following tests: • Unit Tests: Implement unit tests to verify individual functionalities such as movement commands and collision detection. • Integration Tests: Verify that multiple bots can navigate the grid correctly under various scenarios. • Contributing Contributions are welcome! If you would like to contribute to this project, please fork the repository and create a pull request with your changes.
+tkinter (for GUI visualization)
+
+📥 Installation
+
+git clone https://github.com/deepkakadiya7/TheWarehouse-Autobots-Dilemma.git
+cd TheWarehouse-Autobots-Dilemma
+pip install -r requirements.txt
+
+🚀 How to Run the Simulation
+
+python autobot_simulation.py
+
+Input the grid size, starting/ending points, and obstacles when prompted.
+
+The simulation will execute, displaying bot movements step-by-step.
+
+📊 Performance Metrics
+
+Total Time: Cumulative time taken for all autobots to reach their destinations.
+
+Total Commands: Number of movement commands issued, including Wait commands.
+
+🤖 Collision Avoidance Logic
+
+If two bots are about to occupy the same cell, one will Wait until the path is clear.
+
+Paths adjust dynamically based on obstacles and the positions of other bots.
+
+🕰️ Wait Command Management
+
+Bots issue Wait commands to prevent collisions in tight spaces.
+
+The command is managed intelligently for smooth navigation.
+
+✅ Testing
+
+Unit Tests: Verify functionalities like movement commands and collision detection.
+
+Integration Tests: Ensure multiple bots navigate correctly under different scenarios.
+
+🤝 Contributing
+
+Fork the repository
+
+Create a new branch (git checkout -b feature-branch)
+
+Commit your changes (git commit -m 'Add new feature')
+
+Push to the branch (git push origin feature-branch)
+
+Open a Pull Request
+
+📧 Contact
+
+For queries, feel free to reach out or open an issue on the repository.
+
+Happy Coding! 🚀
