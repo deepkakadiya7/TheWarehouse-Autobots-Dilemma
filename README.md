@@ -2,7 +2,7 @@ The Warehouse-Autobots Dilemma
 
 🚀 Project Overview
 
-The Warehouse-Autobots Simulation project aims to develop a smart system to control autonomous robots (autobots) within a grid-based warehouse environment. The autobots are tasked with moving products from designated starting points (A) to destination points (B) while avoiding obstacles (X) and each other. This simulation provides a realistic approach to managing multiple bots, ensuring efficient and collision-free movement.
+The Warehouse-Autobots Simulation project aims to develop an intelligent system to control autonomous robots (autobots) within a grid-based warehouse environment. The autobots are responsible for transporting products from designated starting points (A) to destination points (B) while avoiding obstacles (X) and each other. This simulation offers a realistic approach to managing multiple bots, ensuring efficient and collision-free operations.
 
 🔑 Key Features
 
@@ -16,7 +16,7 @@ Parallel Movement: Bots move simultaneously while intelligently avoiding collisi
 
 Command Logging: Records detailed logs of each bot's movement commands.
 
-Performance Metrics: Calculates total time taken and number of commands issued for efficiency evaluation.
+Performance Metrics: Calculates total time taken and the number of commands issued to evaluate efficiency.
 
 🗂️ Project Structure
 
@@ -51,39 +51,45 @@ The simulation will execute, displaying bot movements step-by-step.
 
 📊 Performance Metrics
 
-Total Time: Cumulative time taken for all autobots to reach their destinations.
+Total Time: The cumulative time taken for all autobots to reach their destinations, including time spent on Wait commands.
 
-Total Commands: Number of movement commands issued, including Wait commands.
+Total Commands: The number of movement commands issued, including Wait commands.
 
 🤖 Collision Avoidance Logic
 
 If two bots are about to occupy the same cell, one will Wait until the path is clear.
 
-Paths adjust dynamically based on obstacles and the positions of other bots.
+Paths are dynamically adjusted based on obstacles and the positions of other bots.
 
 🕰️ Wait Command Management
 
-Bots issue Wait commands to prevent collisions in tight spaces.
+Autobots issue Wait commands to prevent collisions in tight spaces.
 
-The command is managed intelligently for smooth navigation.
+The Wait command is intelligently managed to ensure smooth navigation.
 
 ✅ Testing
 
-Unit Tests: Verify functionalities like movement commands and collision detection.
+Unit Tests: Verify functionalities such as movement commands and collision detection.
 
 Integration Tests: Ensure multiple bots navigate correctly under different scenarios.
 
 🤝 Contributing
 
-Fork the repository
+Fork the repository.
 
-Create a new branch (git checkout -b feature-branch)
+Create a new branch:
 
-Commit your changes (git commit -m 'Add new feature')
+git checkout -b feature-branch
 
-Push to the branch (git push origin feature-branch)
+Commit your changes:
 
-Open a Pull Request
+git commit -m 'Add new feature'
+
+Push to the branch:
+
+git push origin feature-branch
+
+Open a Pull Request.
 
 📧 Contact
 
